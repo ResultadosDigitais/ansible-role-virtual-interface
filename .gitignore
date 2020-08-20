@@ -1,6 +1,7 @@
 /.kitchen/
 .kitchen.local.yml
 *.swp
+*.pyc
 .bundle/
 vendor/
 Gemfile.lock
