@@ -38,3 +38,4 @@
   command: "ip link show {{ item.key }}"
   changed_when: false
   with_dict: "{{ virtual_interface }}"
+  when: not (item.value.check_ignore is defined) or (item.value.check_ignore is defined and not item.value.check_ignore)
